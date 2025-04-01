@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page 2 - BAIS Survey</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAIS Survey - Page 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+  <style>
+    .fontawesome {
+      font-size: 1.15rem;
+      color: #333333;
+    }
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: #333333;
+      color: #f8f8f8;
+      font-size: 1.15rem;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      border-radius: 6px;
+      padding: 15px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      margin-left: -100px;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
 </head>
-<body class="container my-5">
-  <h1 class="mb-4 text-center">Business Analytics Student Survey</h1>
+<body class="container py-4">
+  <h1 class="mb-4">Business Analytics Student Survey</h1>
 
   <form action="hfhaynes_ty.html" method="get">
-
-    <!-- Academic year radio buttons -->
     <fieldset class="mb-4">
-      <legend class="h5">I am finishing my <span class="text-danger">*</span></legend>
-
+      <legend>I am finishing my <span class="text-danger">*</span></legend>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="year" id="year1" value="1st Year" required>
+        <input class="form-check-input" type="radio" name="year" value="1" id="year1" required>
         <label class="form-check-label" for="year1">First year at Iowa</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="year" id="year2" value="2nd Year">
+        <input class="form-check-input" type="radio" name="year" value="2" id="year2">
         <label class="form-check-label" for="year2">Second year at Iowa</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="year" id="year3" value="3rd Year">
+        <input class="form-check-input" type="radio" name="year" value="3" id="year3">
         <label class="form-check-label" for="year3">Third year at Iowa</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="year" id="year4" value="4th Year">
+        <input class="form-check-input" type="radio" name="year" value="4" id="year4">
         <label class="form-check-label" for="year4">Fourth year at Iowa</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="year" id="year5" value="5+ Years">
+        <input class="form-check-input" type="radio" name="year" value="5+" id="year5">
         <label class="form-check-label" for="year5">Fifth or more year at Iowa</label>
       </div>
     </fieldset>
 
-    <!-- BAIS classes checkboxes -->
     <fieldset class="mb-4">
-      <legend class="h5">BAIS core classes I have completed <span class="text-danger">*</span></legend>
-
+      <legend>BAIS core classes I have completed <span class="text-danger">*</span></legend>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="is" name="courses" value="Information Systems" required>
-        <label class="form-check-label" for="is">Information Systems</label>
+        <input class="form-check-input" type="checkbox" name="courses" value="info-sys" id="info-sys">
+        <label class="form-check-label" for="info-sys">Information Systems</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="ops" name="courses" value="Operations">
+        <input class="form-check-input" type="checkbox" name="courses" value="ops" id="ops">
         <label class="form-check-label" for="ops">Operations</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="foundations" name="courses" value="Foundations of Business Analytics">
+        <input class="form-check-input" type="checkbox" name="courses" value="foundations" id="foundations">
         <label class="form-check-label" for="foundations">Foundations of Business Analytics</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="thinking" name="courses" value="Computational Thinking">
+        <input class="form-check-input" type="checkbox" name="courses" value="thinking" id="thinking">
         <label class="form-check-label" for="thinking">Computational Thinking</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="db" name="courses" value="Database Management">
+        <input class="form-check-input" type="checkbox" name="courses" value="db" id="db">
         <label class="form-check-label" for="db">Database Management</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="wrangling" name="courses" value="Data Wrangling">
+        <input class="form-check-input" type="checkbox" name="courses" value="wrangling" id="wrangling">
         <label class="form-check-label" for="wrangling">Data Wrangling</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="mining" name="courses" value="Data Mining">
+        <input class="form-check-input" type="checkbox" name="courses" value="mining" id="mining">
         <label class="form-check-label" for="mining">Data Mining</label>
       </div>
-
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="capstone" name="courses" value="BAIS Capstone">
+        <input class="form-check-input" type="checkbox" name="courses" value="capstone" id="capstone">
         <label class="form-check-label" for="capstone">BAIS Capstone</label>
       </div>
     </fieldset>
 
-    <div class="text-center">
-      <button type="submit" class="btn btn-success">Finish</button>
-    </div>
+    <button class="btn btn-primary" type="submit">Finish</button>
   </form>
-</body>
-</html>
-
-  </form>
-
 </body>
 </html>
