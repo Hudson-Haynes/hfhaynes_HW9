@@ -17,3 +17,5 @@ Finally, I added a tooltip with a Font Awesome icon to provide extra help withou
 Accessibility was a key part of this project. The form is fully responsive, so it works well on phones, tablets, and desktops. I followed WCAG 2.1 AA guidelines by using semantic HTML5 elements (like `<fieldset>`, `<legend>`, and `<label>`), which improve screen reader compatibility. Input elements are labeled properly, and required fields provide clear validation feedback.
 
 To help all users, I used high-contrast text and buttons through Bootstrap 5.3, making the form readable for users with vision impairments. The tooltip also meets accessibility needs by offering context in a non-disruptive way. All of these elements ensure that the form is inclusive and usable by as many people as possible.
+
+Link: https://gray-stone-08ce7df10.6.azurestaticapps.net 
